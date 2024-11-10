@@ -45,13 +45,6 @@ D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_f
 D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src/CMakeFiles/install.dir
 D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src/CMakeFiles/install/local.dir
 D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src/CMakeFiles/install/strip.dir
-D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/CMakeFiles/gpio.dir
-D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/CMakeFiles/edit_cache.dir
-D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/CMakeFiles/rebuild_cache.dir
-D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/CMakeFiles/list_install_components.dir
-D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/CMakeFiles/install.dir
-D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/CMakeFiles/install/local.dir
-D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/CMakeFiles/install/strip.dir
 D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/CMakeFiles/gpiops.dir
 D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/CMakeFiles/edit_cache.dir
 D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/CMakeFiles/rebuild_cache.dir

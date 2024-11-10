@@ -166,10 +166,7 @@ include_folder: include
 lib_folder: lib
 libsrc_folder: libsrc
 drv_info:
-  gpio_leds:
-    driver: gpio
-    ip_name: axi_gpio
-    path: S:\Xilinx\Vitis\2024.1\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_11
+  axi_gpio_output_0: None
   ps7_afi_0: None
   ps7_afi_1: None
   ps7_afi_2: None

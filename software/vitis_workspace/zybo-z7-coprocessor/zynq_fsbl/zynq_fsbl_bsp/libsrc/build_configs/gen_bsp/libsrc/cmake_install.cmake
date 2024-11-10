@@ -64,11 +64,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("D:/repos/zybo-z7-coprocessor/software/vitis_workspace/zybo-z7-coprocessor/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/cmake_install.cmake")
 endif()
 

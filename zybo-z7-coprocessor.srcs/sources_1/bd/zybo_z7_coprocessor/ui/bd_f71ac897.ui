@@ -1,14 +1,14 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Addressing View_Layers":"/processing_system7_0_FCLK_RESET0_N:false|/processing_system7_0_FCLK_CLK0:false|/clk_wiz_0_clk_out1:false|/clk_wiz_0_clk_out2:false|/clk_wiz_0_clk_out3:false|",
+   "Addressing View_Layers":"/processing_system7_0_FCLK_RESET0_N:false|/processing_system7_0_FCLK_CLK0:false|/clk_wiz_0_clk_out1:false|/clk_wiz_0_clk_out2:false|/clk_wiz_0_clk_out3:false|/rst_ps7_0_50M_peripheral_aresetn:false|",
    "Addressing View_ScaleFactor":"1.3882",
    "Addressing View_TopLeft":"1,3",
-   "Color Coded_Layers":"/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/clk_wiz_0_clk_out1:true|/clk_wiz_0_clk_out2:true|/clk_wiz_0_clk_out3:true|",
+   "Color Coded_Layers":"/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/clk_wiz_0_clk_out1:true|/clk_wiz_0_clk_out2:true|/clk_wiz_0_clk_out3:true|/rst_ps7_0_50M_peripheral_aresetn:true|",
    "Color Coded_ScaleFactor":"1.28818",
    "Color Coded_TopLeft":"-122,3",
    "Default View_Layers":"/processing_system7_0_FCLK_CLK0:true|/processing_system7_0_FCLK_RESET0_N:true|/rst_ps7_0_50M_peripheral_aresetn:true|",
-   "Default View_ScaleFactor":"1.14929",
-   "Default View_TopLeft":"-103,-57",
+   "Default View_ScaleFactor":"1.34984",
+   "Default View_TopLeft":"10,-59",
    "Display-PortTypeClock":"true",
    "Display-PortTypeOthers":"true",
    "Display-PortTypeReset":"true",
@@ -23,29 +23,29 @@
    "Reduced Jogs_Layers":"/processing_system7_0_FCLK_RESET0_N:true|/processing_system7_0_FCLK_CLK0:true|/clk_wiz_0_clk_out1:true|/clk_wiz_0_clk_out2:true|/clk_wiz_0_clk_out3:true|",
    "Reduced Jogs_ScaleFactor":"0.87207",
    "Reduced Jogs_TopLeft":"-263,3",
-   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0 threadsafe
 #  -string -flagsOSRD
-preplace port leds_4bits -pg 1 -lvl 5 -x 1210 -y 190 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 5 -x 1210 -y 570 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 2 -x 290 -y 600 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 1 -x 0 -y 600 -defaultsOSRD
-preplace inst gpio_leds -pg 1 -lvl 4 -x 1040 -y 240 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 1040 -y 60 -defaultsOSRD
-preplace inst rst_ps7_0_50M -pg 1 -lvl 3 -x 700 -y 350 -defaultsOSRD
-preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 100 710 490 250 880
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 500 330n
-preplace netloc xlconcat_0_dout 1 1 1 90 600n
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 3 1 890 40n
-preplace netloc gpio_leds_GPIO 1 4 1 1190 190n
-preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 480J 240 870
-preplace netloc ps7_0_axi_periph_M00_AXI 1 3 2 900 320 1180
-preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 570 NJ 570 NJ
-levelinfo -pg 1 -90 0 290 700 1040 1210
-pagesize -pg 1 -db -bbox -sgen -90 -60 1330 740
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1130 -y 280 -defaultsOSRD
+preplace port leds_4bits -pg 1 -lvl 5 -x 1130 -y 420 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 380 -y 310 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 90 -y 320 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 740 -y 400 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 2 -x 380 -y 100 -defaultsOSRD
+preplace inst axi_gpio_output_0 -pg 1 -lvl 4 -x 1000 -y 420 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 3 180 200 580 520 880
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 190 420 570
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 2 2 600 530 890J
+preplace netloc xlconcat_0_dout 1 1 1 N 320
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 280 NJ 280 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 590 320n
+preplace netloc axi_gpio_output_0_GPIO 1 4 1 NJ 420
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 N 400
+levelinfo -pg 1 0 90 380 740 1000 1130
+pagesize -pg 1 -db -bbox -sgen 0 0 1250 540
 "
 }
 {
-   "da_axi4_cnt":"1",
+   "da_axi4_cnt":"3",
    "da_board_cnt":"3",
    "da_ps7_cnt":"2"
 }

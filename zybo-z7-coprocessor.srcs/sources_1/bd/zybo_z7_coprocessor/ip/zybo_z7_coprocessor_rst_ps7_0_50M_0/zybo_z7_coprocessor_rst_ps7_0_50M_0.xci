@@ -38,7 +38,7 @@
         "DEVICE": [ { "value": "xc7z010" } ],
         "NEXTGEN_VERSAL": [ { "value": "0" } ],
         "PACKAGE": [ { "value": "clg400" } ],
-        "PREFHDL": [ { "value": "VERILOG" } ],
+        "PREFHDL": [ { "value": "VHDL" } ],
         "SILICON_REVISION": [ { "value": "" } ],
         "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
         "SPEEDGRADE": [ { "value": "-1" } ],
@@ -53,7 +53,7 @@
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2024.1" } ],
-        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },
     "boundary": {

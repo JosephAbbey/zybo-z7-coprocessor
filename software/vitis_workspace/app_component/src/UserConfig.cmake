@@ -10,7 +10,6 @@ cmake_minimum_required(VERSION 3.16)
 # Add any compiler definitions, they will be added as extra definitions
 # Example adding VERBOSE=1 will pass -DVERBOSE=1 to the compiler.
 set(USER_COMPILE_DEFINITIONS
-""
 )
 
 # Undefine any previously specified compiler definitions, either built in or provided with a -D option
@@ -26,6 +25,7 @@ set(USER_UNDEFINED_SYMBOLS
 # Example 3: Adding ${CMAKE_SOURCE_DIR}/data/include to add data/include from this project.
 
 set(USER_INCLUDE_DIRECTORIES
+
 )
 
 # -----------------------------------------
@@ -112,6 +112,7 @@ set(USER_LINK_LIBRARIES
 # Example 1: Adding /proj/compression/lib will pass -L/proj/compression/lib to the linker.
 # Example adding Adding ../../common/lib will consider the path as relative to this directory. and will pass the path to -L option.
 set(USER_LINK_DIRECTORIES
+
 )
 
 # -----------------------------------------

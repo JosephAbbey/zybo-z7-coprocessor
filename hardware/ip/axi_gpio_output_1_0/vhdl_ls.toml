@@ -1,0 +1,4 @@
+[files]
+include_dirs = ["hdl"]
+
+[libraries]

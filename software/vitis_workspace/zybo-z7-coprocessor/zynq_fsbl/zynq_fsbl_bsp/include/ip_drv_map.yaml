@@ -1,6 +1,6 @@
-gpio_leds:
-- axi_gpio
-- gpio
+axi_gpio_output_0:
+- axi_gpio_output
+- None
 ps7_afi_0:
 - ps7_afi
 - None

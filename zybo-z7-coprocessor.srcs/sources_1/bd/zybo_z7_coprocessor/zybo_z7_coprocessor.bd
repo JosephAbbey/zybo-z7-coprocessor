@@ -7,35 +7,22 @@
       "name": "zybo_z7_coprocessor",
       "pfm_name": "xilinx:zybo-z7-10:zybo-z7-coprocessor:0.0",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
-      "synth_flow_mode": "Hierarchical",
+      "synth_flow_mode": "None",
       "tool_version": "2024.1",
       "validated": "true"
     },
     "design_tree": {
       "processing_system7_0": "",
       "xlconcat_0": "",
-      "gpio_leds": "",
       "ps7_0_axi_periph": {
         "s00_couplers": {
           "auto_pc": ""
         }
       },
-      "rst_ps7_0_50M": ""
+      "rst_ps7_0_50M": "",
+      "axi_gpio_output_0": ""
     },
     "interface_ports": {
-      "leds_4bits": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
-        "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
-        "port_maps": {
-          "TRI_O": {
-            "physical_name": "leds_4bits_tri_o",
-            "direction": "O",
-            "left": "3",
-            "right": "0"
-          }
-        }
-      },
       "FIXED_IO": {
         "mode": "Master",
         "vlnv_bus_definition": "xilinx.com:display_processing_system7:fixedio:1.0",
@@ -72,6 +59,19 @@
           "DDR_VRP": {
             "physical_name": "FIXED_IO_ddr_vrp",
             "direction": "IO"
+          }
+        }
+      },
+      "leds_4bits": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:gpio:1.0",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0",
+        "port_maps": {
+          "TRI_O": {
+            "physical_name": "leds_4bits_tri_o",
+            "direction": "O",
+            "left": "3",
+            "right": "0"
           }
         }
       }
@@ -1249,21 +1249,6 @@
           "IRQ": "In0 {is_range \"true\"} In1 {is_range \"true\"} In2 {is_range \"true\"} In3 {is_range \"true\"} In4 {is_range \"true\"} In5 {is_range \"true\"} In6 {is_range \"true\"} In7 {is_range \"true\"}"
         }
       },
-      "gpio_leds": {
-        "vlnv": "xilinx.com:ip:axi_gpio:2.0",
-        "ip_revision": "33",
-        "xci_name": "zybo_z7_coprocessor_axi_gpio_0_0",
-        "xci_path": "ip\\zybo_z7_coprocessor_axi_gpio_0_0\\zybo_z7_coprocessor_axi_gpio_0_0.xci",
-        "inst_hier_path": "gpio_leds",
-        "parameters": {
-          "GPIO_BOARD_INTERFACE": {
-            "value": "leds_4bits"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
       "ps7_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
         "xci_path": "ip\\zybo_z7_coprocessor_ps7_0_axi_periph_0\\zybo_z7_coprocessor_ps7_0_axi_periph_0.xci",
@@ -1484,13 +1469,20 @@
         "xci_name": "zybo_z7_coprocessor_rst_ps7_0_50M_0",
         "xci_path": "ip\\zybo_z7_coprocessor_rst_ps7_0_50M_0\\zybo_z7_coprocessor_rst_ps7_0_50M_0.xci",
         "inst_hier_path": "rst_ps7_0_50M"
+      },
+      "axi_gpio_output_0": {
+        "vlnv": "xilinx.com:user:axi_gpio_output:1.0",
+        "ip_revision": "3",
+        "xci_name": "zybo_z7_coprocessor_axi_gpio_output_0_1",
+        "xci_path": "ip\\zybo_z7_coprocessor_axi_gpio_output_0_1\\zybo_z7_coprocessor_axi_gpio_output_0_1.xci",
+        "inst_hier_path": "axi_gpio_output_0"
       }
     },
     "interface_nets": {
-      "gpio_leds_GPIO": {
+      "axi_gpio_output_0_GPIO": {
         "interface_ports": [
           "leds_4bits",
-          "gpio_leds/GPIO"
+          "axi_gpio_output_0/GPIO"
         ]
       },
       "processing_system7_0_FIXED_IO": {
@@ -1508,7 +1500,7 @@
       "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M00_AXI",
-          "gpio_leds/S_AXI"
+          "axi_gpio_output_0/S_AXI"
         ]
       }
     },
@@ -1519,9 +1511,9 @@
           "processing_system7_0/M_AXI_GP0_ACLK",
           "ps7_0_axi_periph/S00_ACLK",
           "rst_ps7_0_50M/slowest_sync_clk",
-          "gpio_leds/s_axi_aclk",
           "ps7_0_axi_periph/M00_ACLK",
-          "ps7_0_axi_periph/ACLK"
+          "ps7_0_axi_periph/ACLK",
+          "axi_gpio_output_0/s_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1534,9 +1526,9 @@
         "ports": [
           "rst_ps7_0_50M/peripheral_aresetn",
           "ps7_0_axi_periph/S00_ARESETN",
-          "gpio_leds/s_axi_aresetn",
           "ps7_0_axi_periph/M00_ARESETN",
-          "ps7_0_axi_periph/ARESETN"
+          "ps7_0_axi_periph/ARESETN",
+          "axi_gpio_output_0/s_axi_aresetn"
         ]
       },
       "xlconcat_0_dout": {
@@ -1551,10 +1543,12 @@
         "address_spaces": {
           "Data": {
             "segments": {
-              "SEG_gpio_leds_Reg": {
-                "address_block": "/gpio_leds/S_AXI/Reg",
-                "offset": "0x41200000",
-                "range": "64K"
+              "SEG_axi_gpio_output_0_S_AXI_reg": {
+                "address_block": "/axi_gpio_output_0/S_AXI/S_AXI_reg",
+                "offset": "0x43C00000",
+                "range": "64K",
+                "offset_base_param": "C_S_AXI_BASEADDR",
+                "offset_high_param": "C_S_AXI_HIGHADDR"
               }
             }
           }

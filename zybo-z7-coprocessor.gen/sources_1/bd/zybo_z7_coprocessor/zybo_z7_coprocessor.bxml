@@ -2,19 +2,18 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="zybo_z7_coprocessor" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1729099044"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1729099044"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1729099044"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1729099044"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1731228418"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1731228418"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1731228418"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1731228418"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="synth\zybo_z7_coprocessor.v" Type="Verilog">
+      <File Name="synth\zybo_z7_coprocessor.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <ProcessingOrder Val="NORMAL"/>
       </File>
-      <File Name="sim\zybo_z7_coprocessor.v" Type="Verilog">
+      <File Name="sim\zybo_z7_coprocessor.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>

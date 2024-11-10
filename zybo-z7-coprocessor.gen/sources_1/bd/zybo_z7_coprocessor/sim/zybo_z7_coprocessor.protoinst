@@ -3,15 +3,17 @@
 	"modules": {
 		"zybo_z7_coprocessor": {
 			"proto_instances": {
-				"/gpio_leds/S_AXI": {
+				"/axi_gpio_output_0/S_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
 						"ACLK": { "actual": "s_axi_aclk"},
-						"ARADDR": { "actual": "s_axi_araddr[8:0]"},
+						"ARADDR": { "actual": "s_axi_araddr[3:0]"},
 						"ARESETN": { "actual": "s_axi_aresetn"},
+						"ARPROT": { "actual": "s_axi_arprot[2:0]"},
 						"ARREADY": { "actual": "s_axi_arready"},
 						"ARVALID": { "actual": "s_axi_arvalid"},
-						"AWADDR": { "actual": "s_axi_awaddr[8:0]"},
+						"AWADDR": { "actual": "s_axi_awaddr[3:0]"},
+						"AWPROT": { "actual": "s_axi_awprot[2:0]"},
 						"AWREADY": { "actual": "s_axi_awready"},
 						"AWVALID": { "actual": "s_axi_awvalid"},
 						"BREADY": { "actual": "s_axi_bready"},
@@ -77,9 +79,11 @@
 						"ACLK": { "actual": "M00_ACLK"},
 						"ARADDR": { "actual": "M00_AXI_araddr[31:0]"},
 						"ARESETN": { "actual": "ARESETN"},
+						"ARPROT": { "actual": "M00_AXI_arprot[2:0]"},
 						"ARREADY": { "actual": "M00_AXI_arready"},
 						"ARVALID": { "actual": "M00_AXI_arvalid"},
 						"AWADDR": { "actual": "M00_AXI_awaddr[31:0]"},
+						"AWPROT": { "actual": "M00_AXI_awprot[2:0]"},
 						"AWREADY": { "actual": "M00_AXI_awready"},
 						"AWVALID": { "actual": "M00_AXI_awvalid"},
 						"BREADY": { "actual": "M00_AXI_bready"},
@@ -146,9 +150,11 @@
 						"ACLK": { "actual": "M_ACLK"},
 						"ARADDR": { "actual": "M_AXI_araddr[31:0]"},
 						"ARESETN": { "actual": "M_ARESETN"},
+						"ARPROT": { "actual": "M_AXI_arprot[2:0]"},
 						"ARREADY": { "actual": "M_AXI_arready"},
 						"ARVALID": { "actual": "M_AXI_arvalid"},
 						"AWADDR": { "actual": "M_AXI_awaddr[31:0]"},
+						"AWPROT": { "actual": "M_AXI_awprot[2:0]"},
 						"AWREADY": { "actual": "M_AXI_awready"},
 						"AWVALID": { "actual": "M_AXI_awvalid"},
 						"BREADY": { "actual": "M_AXI_bready"},
