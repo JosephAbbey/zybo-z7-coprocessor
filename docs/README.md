@@ -248,36 +248,36 @@
 
 57. Update the application component `main.c` file. Click `Build`. Click `Run`.
 
-```c
-#include "xparameters.h"
-#include "sleep.h"
-#include "xil_printf.h"
-#include "xil_types.h"
-#include "xgpio.h"
-#include "xstatus.h"
-#include <xil_io.h>
+    ```c
+    #include "xparameters.h"
+    #include "sleep.h"
+    #include "xil_printf.h"
+    #include "xil_types.h"
+    #include "xgpio.h"
+    #include "xstatus.h"
+    #include <xil_io.h>
 
-// Get device IDs from xparameters.h
-#define LEDS_BASE_ADDRESS XPAR_AXI_GPIO_0_BASEADDR
-#define LEDS_MASK 0b1111
-#define BTNS_BASE_ADDRESS XPAR_AXI_GPIO_1_BASEADDR
- 
-int main() {
-	u32 leds;
-    u32 btns;
- 
-	xil_printf("Entered function main\r\n");
+    // Get device IDs from xparameters.h
+    #define LEDS_BASE_ADDRESS XPAR_AXI_GPIO_0_BASEADDR
+    #define LEDS_MASK 0b1111
+    #define BTNS_BASE_ADDRESS XPAR_AXI_GPIO_1_BASEADDR
     
-    leds = 0;
-	while (1) {
-        sleep(1);
+    int main() {
+        u32 leds;
+        u32 btns;
+    
+        xil_printf("Entered function main\r\n");
+        
+        leds = 0;
+        while (1) {
+            sleep(1);
 
-        btns = Xil_In32(BTNS_BASE_ADDRESS);
-        xil_printf("Reading: %x\r\n", btns);
+            btns = Xil_In32(BTNS_BASE_ADDRESS);
+            xil_printf("Reading: %x\r\n", btns);
 
-        leds++;
-        xil_printf("Writing: %x\r\n", leds & LEDS_MASK);
-        Xil_Out32(LEDS_BASE_ADDRESS, leds & LEDS_MASK);
-	}
-}
-```
+            leds++;
+            xil_printf("Writing: %x\r\n", leds & LEDS_MASK);
+            Xil_Out32(LEDS_BASE_ADDRESS, leds & LEDS_MASK);
+        }
+    }
+    ```
